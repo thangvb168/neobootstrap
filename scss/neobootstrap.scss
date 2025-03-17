@@ -1,0 +1,15 @@
+// Configuration
+@import 'functions';
+@import 'variables';
+@import 'mixins';
+
+// Layout & Components
+@import 'containers';
+
+h1 {
+    color: $black;
+}
+
+p {
+    color: $primary;
+}

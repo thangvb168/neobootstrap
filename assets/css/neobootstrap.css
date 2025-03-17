@@ -1,0 +1,58 @@
+@charset "UTF-8";
+/*
+Rule: $component-state-property-size
+    $component: Tên thành phần              Eg: button, input
+    $state: Trạng thái của thành phần       Eg: hover, focus, active
+    $property: Thuộc tính của thành phần    Eg: color, box-shadow
+    $size: Kích thước của thuộc tính        Eg: xs, sm, md, lg, xl
+*/
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  --nbs-gutter-x: 1.5rem;
+  --nbs-gutter-y: 0;
+  width: 100%;
+  margin-right: calc(var(--nbs-gutter-x) * 0.5);
+  margin-left: calc(var(--nbs-gutter-x) * 0.5);
+  padding-left: auto;
+  padding-right: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+h1 {
+  color: #000;
+}
+
+p {
+  color: #007bff;
+}
+
+/*# sourceMappingURL=neobootstrap.css.map */
