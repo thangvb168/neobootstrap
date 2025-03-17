@@ -38,7 +38,6 @@ There are two ways to compile SCSS into CSS:
         }
     ],
     "liveSassCompile.settings.generateMap": true,
-    "liveSassCompile.settings.autoprefix": ["last 2 versions", "> 1%"],
     "liveSassCompile.settings.showOutputWindowOn": "Debug"
 }
 ```
